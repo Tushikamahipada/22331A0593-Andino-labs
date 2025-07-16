@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVGR College of Engineering</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>MVGR College of Engineering</h1>
+        <div class="search-container">
+            <input id="searchInput" type="text" placeholder="Search..." />
+            <button onclick="searchSection()">Go</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#about">About</a>
+                    <div class="dropdown">
+                        <a href="#vision">Vision & Mission</a>
+                        <a href="#labs">Labs</a>
+                        <a href="#events">Events</a>
+                        <a href="#history">History</a>
+                        <a href="#leadership">Leadership</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#placements">Placements</a>
+                    <div class="dropdown">
+                        <a href="#placement2024">2024</a>
+                        <a href="#placement2023">2023</a>
+                        <a href="#placement2022">2022</a>
+                        <a href="#placement2021">2021</a>
+                        <a href="#placement2020">2020</a>
+                    </div>
+                </li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="slider">
+            <img src="img1.jpg" class="slide active" alt="Campus View" />
+            <img src="img2.jpg" class="slide" alt="Library" />
+            <img src="img3.jpg" class="slide" alt="Block Image" />
+        </div>
+        <div class="hero-text">
+            <h2>Excellence in Technical Education Since 1997</h2>
+            <p>Strong placements, modern campus, vibrant student life.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>Key Features</h3>
+        <div class="features">
+            <div class="card lab">State‑of‑the‑art Labs</div>
+            <div class="card faculty">Experienced Faculty</div>
+            <div class="card industry">Industry Collaborations</div>
+            <div class="card research">Research & Innovation</div>
+        </div>
+    </section>
+
+    <section id="departments">
+        <h3>Departments</h3>
+        <div class="grid">
+            <div class="card dept-cse">CSE</div>
+            <div class="card dept-ece">ECE</div>
+            <div class="card dept-eee">EEE</div>
+            <div class="card dept-mech">Mechanical</div>
+            <div class="card dept-civil">Civil</div>
+            <div class="card dept-it">IT</div>
+        </div>
+    </section>
+
+    <section id="facilities">
+        <h3>Facilities</h3>
+        <div class="grid">
+            <div class="card fac-wifi">Wi‑Fi Campus</div>
+            <div class="card fac-library">Library</div>
+            <div class="card fac-sports">Sports & Gym</div>
+            <div class="card fac-hostel">Hostel</div>
+            <div class="card fac-canteen">Canteen</div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h3>Events</h3>
+        <div class="grid">
+            <div class="card evt-tech">TechFest – SYNAPSE</div>
+            <div class="card evt-cultural">Cultural – IGNITE</div>
+            <div class="card evt-workshop">Workshops</div>
+            <div class="card evt-hack">Hackathons</div>
+        </div>
+    </section>
+
+    <section id="placements">
+        <h3>Placements Overview</h3>
+        <p>MVGR has consistently achieved high placement records across all departments.</p>
+        <div class="grid">
+            <div class="card placement-info" id="placement2024">
+                <h4>Placements 2024</h4>
+                <ul>
+                    <li>Highest Package: ₹25 LPA</li>
+                    <li>Top Recruiters: TCS, Infosys, Accenture, Capgemini</li>
+                    <li>90% Students Placed</li>
+                </ul>
+            </div>
+            <div class="card placement-info" id="placement2023">
+                <h4>Placements 2023</h4>
+                <ul>
+                    <li>Highest Package: ₹20 LPA</li>
+                    <li>Average Package: ₹4.8 LPA</li>
+                    <li>Major Sectors: IT, Core, Management</li>
+                </ul>
+            </div>
+            <div class="card placement-info" id="placement2022">
+                <h4>Placements 2022</h4>
+                <ul>
+                    <li>Recruiters: Wipro, Cognizant, IBM</li>
+                    <li>Placement Rate: 85%</li>
+                </ul>
+            </div>
+            <div class="card placement-info" id="placement2021">
+                <h4>Placements 2021</h4>
+                <ul>
+                    <li>Impact of COVID minimized</li>
+                    <li>Remote Hiring Process Adopted</li>
+                </ul>
+            </div>
+            <div class="card placement-info" id="placement2020">
+                <h4>Placements 2020</h4>
+                <ul>
+                    <li>Companies: TCS, HCL, Hexaware</li>
+                    <li>Highest Package: ₹12 LPA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions">
+        <h3>Admissions</h3>
+        <p>Programs: B.Tech | M.Tech | MBA<br> Entrance Exams: AP EAMCET, GATE, ICET</p>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <p>Chintalavalasa, Vizianagaram, Andhra Pradesh - 535005<br> 📞 +91-8922-241387 · ✉️ info@mvgr.ac.in</p>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MVGR College of Engineering</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap"></script>
+</body>
+
+</html>
