@@ -16,8 +16,7 @@ This is a responsive college website built for MVGR College of Engineering using
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
-- Google Maps API
+- JavaScript
 
 ## How to Use
 
